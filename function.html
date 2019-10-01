@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <script>
+        intro(); {
+            var calc;
+            var a;
+            var b;
+            var c;
+        }
+
+        function intro() {
+            alert("WelCome To Calculator Page \n 1. SUM \n 2. SUB \n 3. MUL \n 4. DIV");
+            calc = parseInt(prompt("Choose Your Option???"));
+            getinput();
+        }
+
+        function getinput() {
+            a = parseInt(prompt("Enter value of A:"));
+            b = parseInt(prompt("Enter Value of B:"));
+            answer();
+        }
+
+        function answer() {
+            if (calc == 1) {
+                sum();
+            } else if (calc == 2) {
+                sub();
+
+            } else if (calc == 3) {
+                mul();
+
+            } else if (calc == 4) {
+                div();
+
+            } else {
+                alert("Doen Not Anyone Select");
+            }
+
+        }
+
+        function sum() {
+            c = a + b;
+            alert("Add is :" + c);
+            intro();
+        }
+
+        function sub() {
+            c = a - b;
+            alert("Sub is :" + c);
+            intro();
+        }
+
+        function mul() {
+            c = a * b;
+            alert("Mul is :" + c);
+            intro();
+        }
+
+        function div() {
+            c = a / b;
+            alert("Div is :" + c);
+            intro();
+        }
+    </script>
+</body>
+
+</html>
