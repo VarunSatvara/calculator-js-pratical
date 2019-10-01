@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        alert("Wel Come To Calculator Page");
+
+        var calc = parseInt(prompt("Choose Your Option???"));
+        alert(calc + "You Selcet Number");
+        var a = parseInt(prompt("Enter value of A:"));
+        var b = parseInt(prompt("Enter Value of B:"));
+        var c;
+
+        /* if-elese condition using js calculator programm */
+
+        if (calc == 1) {
+            alert("Addition");
+            c = a + b;
+            alert("Add is :" + c);
+        } else if (calc == 2) {
+            alert("Subtraction");
+            c = a - b;
+            alert("Sub is :" + c)
+        } else if (calc == 3) {
+            alert("Multiplication");
+            c = a * b;
+            alert("Mul is :" + c)
+        } else if (calc == 4) {
+            alert("Division");
+            c = a / b;
+            alert("Div is :" + c)
+        } else {
+            alert("Doen Not Anyone Select");
+        }
+    </script>
+</body>
+
+</html>

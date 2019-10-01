@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <script>
+        alert("Wel Come To Calculator Page");
+
+        var calc = parseInt(prompt("Choose Your Option???"));
+        alert(calc + "You Selcet Number");
+        var a = parseInt(prompt("Enter value of A:"));
+        var b = parseInt(prompt("Enter Value of B:"));
+        var c;
+        /* Switch-case statement using js calculator programm */
+
+        switch (calc) {
+            case 1:
+                alert("Addition");
+                c = a + b;
+                alert("Add is :" + c);
+                break;
+            case 2:
+                alert("Subtraction");
+                c = a - b;
+                alert("Sub is :" + c);
+                break;
+            case 3:
+                alert("Multiplication");
+                c = a * b;
+                alert("Mul is :" + c);
+                break;
+            case 4:
+                alert("Division");
+                c = a / b;
+                alert("Div is :" + c);
+                break;
+            default:
+                alert("Does not Anyone Select");
+                break;
+        }
+    </script>
+</body>
+
+</html>
