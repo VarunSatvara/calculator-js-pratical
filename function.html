@@ -13,12 +13,12 @@
 
 <body>
     <script>
-        intro(); {
-            var calc;
-            var a;
-            var b;
-            var c;
-        }
+        var calc;
+        var a;
+        var b;
+        var c;
+        intro();
+
 
         function intro() {
             alert("WelCome To Calculator Page \n 1. SUM \n 2. SUB \n 3. MUL \n 4. DIV");
@@ -32,45 +32,66 @@
             answer();
         }
 
+        // function answer() {
+        //     if (calc == 1) {
+        //         sum();
+        //     } else if (calc == 2) {
+        //         sub();
+
+        //     } else if (calc == 3) {
+        //         mul();
+
+        //     } else if (calc == 4) {
+        //         div();
+
+        //     } else {
+        //         alert("Doen Not Anyone Select");
+        //     }
+
+        // }
         function answer() {
-            if (calc == 1) {
-                sum();
-            } else if (calc == 2) {
-                sub();
+            switch (calc) {
+                case 1:
+                    sum();
+                    break;
+                case 2:
+                    sub();
+                    break;
+                case 3:
+                    mul();
+                    break;
+                case 4:
+                    div();
+                    break;
+                default:
+                    alert("Does not Anyone Select");
+                    break;
 
-            } else if (calc == 3) {
-                mul();
-
-            } else if (calc == 4) {
-                div();
-
-            } else {
-                alert("Doen Not Anyone Select");
             }
-
         }
 
         function sum() {
             c = a + b;
-            alert("Add is :" + c);
-            intro();
+            display("Sum", c);
         }
 
         function sub() {
             c = a - b;
-            alert("Sub is :" + c);
-            intro();
+            display("Sub", c);
         }
 
         function mul() {
             c = a * b;
-            alert("Mul is :" + c);
-            intro();
+            display("Mul", c);
         }
 
         function div() {
             c = a / b;
-            alert("Div is :" + c);
+            display("Div", c);
+        }
+
+        function display(msg, ans) {
+            alert(msg + " is:" + ans);
             intro();
         }
     </script>
